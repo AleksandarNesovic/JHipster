@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.telnet.first",
+      "nativeLanguage": "sr"
+    },
+    "jhipsterVersion": "5.3.1",
+    "applicationType": "monolith",
+    "baseName": "First",
+    "packageName": "com.telnet.first",
+    "packageFolder": "com/telnet/first",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MGIwMjU1Yjc3NGQyNjNmOTlhMjM1NWRiMzE1YWM5YWZkZTZiMmFmZTRkMzcwYzJiOTg4ZDYxZjgyMDBlN2FkN2M4N2QzY2NkNGM0ZDc4YzFiMGQyZjk5ZjQ3YmIwMWZjMTFiNjE5NmZiYWI2NTI4NmM2M2I3Y2JlMDI4NDIxZDE=",
+    "clientFramework": "angularX",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "sr",
+    "languages": [
+      "sr",
+      "en"
+    ]
+  }
+}
