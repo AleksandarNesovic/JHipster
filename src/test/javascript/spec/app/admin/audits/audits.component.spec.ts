@@ -36,15 +36,17 @@ describe('Component Tests', () => {
         let fixture: ComponentFixture<AuditsComponent>;
         let service: AuditsService;
 
-        beforeEach(async(() => {
-            TestBed.configureTestingModule({
-                imports: [FirstTestModule],
-                declarations: [AuditsComponent],
-                providers: [AuditsService]
+        beforeEach(
+            async(() => {
+                TestBed.configureTestingModule({
+                    imports: [FirstTestModule],
+                    declarations: [AuditsComponent],
+                    providers: [AuditsService]
+                })
+                    .overrideTemplate(AuditsComponent, '')
+                    .compileComponents();
             })
-                .overrideTemplate(AuditsComponent, '')
-                .compileComponents();
-        }));
+        );
 
         beforeEach(() => {
             fixture = TestBed.createComponent(AuditsComponent);
@@ -82,7 +84,7 @@ describe('Component Tests', () => {
             it('Should call load all on init', () => {
                 // GIVEN
                 const headers = new HttpHeaders().append('link', 'link;link');
-                const audit = new Audit({ remoteAddress: '127.0.0.1', sessionId: '123' }, 'user', '20140101', 'AUTHENTICATION_SUCCESS');
+                const audit = new Audit({ remoteAddress: '192.168.0.120', sessionId: '123' }, 'user', '20140101', 'AUTHENTICATION_SUCCESS');
                 spyOn(service, 'query').and.returnValue(
                     of(
                         new HttpResponse({
