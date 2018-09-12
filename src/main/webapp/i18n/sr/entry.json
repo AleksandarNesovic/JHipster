@@ -1,0 +1,26 @@
+
+{
+    "firstApp": {
+        "entry" : {
+            "home": {
+                "title": "Entries",
+                "createLabel": "Kreiraj novi Entry",
+                "createOrEditLabel": "Kreirajte ili izmenite Entry"
+            },
+            "created": "Kreiran je novi Entry pod nazivom {{ param }}",
+            "updated": "Entry pod nazivom {{ param }} je ažuriran",
+            "deleted": "Entry pod nazivom {{ param }} je obrisan",
+            "delete": {
+                "question": "Da li ste sigurni da želite da obrišete Entry pod nazivom {{ id }}?"
+            },
+            "detail": {
+                "title": "Entry"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date",
+            "blog": "Blog",
+            "tag": "Tag"
+        }
+    }
+}

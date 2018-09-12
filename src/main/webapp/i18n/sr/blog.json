@@ -1,0 +1,25 @@
+
+{
+    "firstApp": {
+        "blog" : {
+            "home": {
+                "title": "Blogs",
+                "createLabel": "Kreiraj novi Blog",
+                "createOrEditLabel": "Kreirajte ili izmenite Blog"
+            },
+            "created": "Kreiran je novi Blog pod nazivom {{ param }}",
+            "updated": "Blog pod nazivom {{ param }} je ažuriran",
+            "deleted": "Blog pod nazivom {{ param }} je obrisan",
+            "delete": {
+                "question": "Da li ste sigurni da želite da obrišete Blog pod nazivom {{ id }}?"
+            },
+            "detail": {
+                "title": "Blog"
+            },
+            "name": "Name",
+            "handle": "Handle",
+            "user": "User",
+            "entry": "Entry"
+        }
+    }
+}

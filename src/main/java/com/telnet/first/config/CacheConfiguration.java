@@ -38,6 +38,12 @@ public class CacheConfiguration {
             cm.createCache(com.telnet.first.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.telnet.first.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.telnet.first.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.telnet.first.domain.Blog.class.getName(), jcacheConfiguration);
+            cm.createCache(com.telnet.first.domain.Blog.class.getName() + ".entries", jcacheConfiguration);
+            cm.createCache(com.telnet.first.domain.Tag.class.getName(), jcacheConfiguration);
+            cm.createCache(com.telnet.first.domain.Tag.class.getName() + ".entries", jcacheConfiguration);
+            cm.createCache(com.telnet.first.domain.Entry.class.getName(), jcacheConfiguration);
+            cm.createCache(com.telnet.first.domain.Entry.class.getName() + ".tags", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
